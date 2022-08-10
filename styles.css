@@ -1,0 +1,478 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  transition: all .5s linear;
+}
+body{
+  transition: all 0.3s linear;
+  font-family: monospace;
+  background-color:rgb(0,0,0,0.96);
+  color: white;
+  font-weight: normal;
+  position: relative;
+
+}
+button{
+  color: white;
+  border: 0px;
+  background: inherit;
+  margin: 10px;
+}
+#icon-img{
+  border: 0px;
+}
+.album-art::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: url('images/weeknd.webp') no-repeat center center/cover;
+  position:absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  filter: blur(5px) brightness(38%);
+
+}
+.head{
+   position:fixed;
+   top: 0;
+width: 100%;
+z-index: 40;
+   padding: 0 40px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+i{
+  font-size: 1.2rem;
+  color: white;
+
+}
+.sidebar{
+  z-index: 40;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  padding: 40px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.album-art{
+  padding-left: 160px;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 3;
+}
+.upper{
+  display: flex;
+}
+.album-art-text{
+  margin-left: 60px;
+
+}
+.album-art-text h1{
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+.album-art-text h2{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#listen-now{
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.2rem;
+  background: #76BA99;
+  height: 40px;
+  width: 150px;
+}
+#share{
+  text-transform: uppercase;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  background: transparent;
+  height: 40px;
+  width: 100px;
+}
+#share:hover , #listen-now:hover{
+  color: black;
+  background: white;
+}
+
+.lower{
+  margin-left: 200px;
+  margin-top: 170px;
+}
+.lower-btns{
+  display: flex;
+}
+.lower-btns button{
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 0;
+}
+.lowerh1{
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+.list{
+  padding: 200px;
+  padding-bottom: 100px;
+padding-top: 50px;
+}
+.track-list-element{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.track-list-left,.track-list-right{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.listh1{
+  font-size: 3rem;
+}
+
+.L{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.L h1{
+  margin-right: 20px;
+  font-size: 1rem;
+}
+table a{
+  color: white;
+  text-decoration: none;
+}
+#lowerh2{
+  margin-left: 150px;
+}
+
+.sno,.play,.time,.share{
+  padding: 10px;
+
+}
+.play{
+  padding-right: 30px;
+}
+td{
+  font-size: 1rem;
+}
+
+.song{
+  width: 800px;
+}
+.recommend-list{
+  justify-content: center;
+
+  display: flex;
+}
+.card{
+  margin: 27px;
+}
+.bottom{
+  padding-bottom: 160px;
+}
+
+hr{
+  opacity: 0.7;
+  position: relative;
+  border: 0;
+  border-top: 2px solid white;
+  z-index: 20;
+  margin: 30px 150px;
+  margin-bottom: 30px;
+}
+td h1{
+  font-size: 1.5rem;
+}
+.footer{
+  justify-content: space-between;
+  margin: 0 150px;
+  display: flex;
+}
+.f1{
+  display: flex;
+  flex-direction: column;
+}
+.f3{
+  opacity: 0.8;
+  width: 300px;
+}
+.footer h2 , .footer h3{
+  margin: 5px;
+}
+.footer button{
+  height: 30px;
+  width:100px;
+  border: 1px solid white;
+
+}
+.f4 a{
+  color: white;
+  text-decoration:none;
+}
+.footer input{
+  height: 30px;
+  background: inherit;
+  color: white;
+}
+.f4{
+  justify-content: start;
+  align-items: center;
+  display: flex;
+}
+.f4 a:hover{
+  background: white;
+  color: black;
+
+}
+.footer2{
+  align-items: center;
+  justify-content:space-between;
+  display: flex;
+  margin:0 150px;
+}
+.footer2 p{
+  opacity: 0.8;
+  font-size: 1rem;
+  width: fit-content;
+  display: inline;
+}
+.ab{
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#shop{
+font-size : 1.2rem;
+}
+.about{
+  width: 600px;
+  margin: 0 150px;
+}
+.about p{
+  text-align: center;
+}
+
+@media (max-width:1010px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+#shop{
+font-size:3rem;
+}
+  body td {
+font-size: 2rem;
+  }
+  .footer{
+    margin: 0 80px;
+    width: 700px;
+    display: grid;
+    justify-items:start;
+    align-items: baseline;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .album-art h1{
+    margin-top: 30px;
+    font-size: 2rem;
+
+  }
+  .album-art h2{
+    font-size: 1.5rem;
+
+  }
+  .recommend-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+  }
+  #m1{
+    font-size: 3rem;
+  }
+  .sidebar{
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 17rem;
+    padding-top: 10px;
+
+  }
+  .sidebar i{
+    font-size: 2rem;
+  }
+  .s1 img{
+    height: 80px;
+    width: 80px;
+  }
+
+  #close1{
+    font-size: 3rem;
+  }
+  .side-menu{
+    font-size: 2rem;
+    height: fit-content;
+  }
+  /* .card:nth-of-type(2){
+    grid-column: 2/3;
+  } */
+  .album-art::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url('images/weeknd.webp') no-repeat center center/cover;
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    filter: blur(5px) brightness(38%);
+
+  }
+  hr{
+    margin: 30px 70px;
+  }
+  .album-art,.lower,.list,.bottom,.footer2,.ab{
+    padding: 40px;
+    margin: 40px;
+  }
+  .album-art,.upper,.footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+  }
+  .f3{
+    margin-top: 30px;
+  }
+
+  .album-art img{
+    height: 280px;
+    width: 280px;
+  }
+  #listen-now,#share{
+    margin-left: 0;
+
+  }
+
+
+  .lowerh1,#lowerh2{
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+  }
+  .about{
+    width: 400px;
+  }
+  .about p {
+    margin-top: 0;
+    width: 400px;
+  }
+
+}
+.s-menu{
+
+  display: none;
+
+}
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 40;
+  padding:20px;
+  padding-right: 20px;
+}
+.side-menu a{
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+.side-menu h2{
+  margin-bottom: 15px;
+}
+.side-menu-socials{
+  width: 300px;
+  margin:60px 0;
+}
+.side-menu-socials button{
+
+  margin: 0;
+  margin-right:6px;
+}
+.side-menu-socials i{
+  font-size: 1rem;
+}
+.s2{
+margin-top:20px;
+}
+
+.last{
+  font-size: 1rem;
+  display: inline;
+}
+#sign-in:hover{
+  background: white;
+  color: black;
+  transition: all 0.3s linear;
+}
+.side-menu h1{
+  display: inline;
+  width: fit-content;
+}
+.s1{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.side-menu-socials i{
+  font-size: 2rem;
+}
+.s2 button {
+border:1px solid white;
+  padding:0 10px;;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.6rem;
+}
+.s2 p,.s2 a{
+
+  font-size: 1.6rem;
+
+}
+
+.S{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width:940px){
+  .sidebar{
+    display: none;
+  }
+}
